@@ -29,3 +29,7 @@ Route::get('/contact', function () {
 Route::get('/layout', function () {
     return view('layouts.web');
 });
+
+Route::get('/singlePost', function () {
+    return view('singlePost');
+});
