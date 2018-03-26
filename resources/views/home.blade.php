@@ -222,13 +222,40 @@
         <div class="feature_sec8">
             <div class="container">
 
+                <div class="one">
+                    <h2 class="small2">Recent <strong>Blogs</strong></h2>
+                </div>
+
                 <div class="one_half">
 
-                    <h2 class="small2">Recent <strong>Blogs</strong></h2>
+                    <div class="small two">
 
-                    <div class="owl-carousel small two">
+                        <div style="display: flex">
 
-                        <div>
+                            <div class="left">
+                                <a href="#"><img src="http://placehold.it/100x100" alt="" /></a>
+                                <div class="date"><a href="#"><strong>27</strong> NOV</a></div>
+                                <div class="comment"><a href="#"><i class="fa fa-comments fa-2x"></i>&nbsp; 257</a></div>
+                            </div>
+
+                            <div class="right">
+                                <div class="big_text2"><a href="#">There are many variations passages desktop lorem Ipsum available.</a></div>
+                                <br />
+                                <p>But the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                    anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet to repeat predefined chunks as necessary, making this the first true generator on the normal distribution Internet.</p>
+                            </div>
+
+                        </div>
+                        <!-- end section -->
+                    </div>
+                    
+                </div>
+                <!-- end all section -->
+                <div class="one_half last">
+                
+                    <div class="small two">
+
+                        <div style="display: flex">
 
                             <div class="left">
                                 <a href="#"><img src="http://placehold.it/100x100" alt="" /></a>
@@ -247,9 +274,11 @@
                         <!-- end section -->
                     </div>
 
-                </div>
-                <!-- end all section -->
                     </div>
             </div>
+                    
+        </div>
+                    
+    </div>
 
 @endsection
