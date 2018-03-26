@@ -235,7 +235,6 @@
                                 <div class="date"><a href="#"><strong>27</strong> NOV</a></div>
                                 <div class="comment"><a href="#"><i class="fa fa-comments fa-2x"></i>&nbsp; 257</a></div>
                             </div>
-                            <!-- end left -->
 
                             <div class="right">
                                 <div class="big_text2"><a href="#">There are many variations passages desktop lorem Ipsum available.</a></div>
