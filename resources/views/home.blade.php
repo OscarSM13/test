@@ -217,7 +217,6 @@
 
             </div>
         </div>
-        <!-- end features section 2 -->
     <div class="clearfix"></div>
 
         <div class="feature_sec8">
