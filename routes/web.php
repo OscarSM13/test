@@ -14,27 +14,18 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
 Route::get('/home', function () {
     return view('home');
 });
-
 Route::get('/blog', function () {
     return view('blog');
 });
-
 Route::get('/about-us', function () {
     return view('about-us');
 });
-
 Route::get('/contact', function () {
     return view('contact');
 });
-
-Route::get('/layout', function () {
-    return view('layouts.web');
-});
-
 Route::get('/layout', function () {
     return view('layouts.web');
 });
