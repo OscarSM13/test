@@ -2709,6 +2709,6 @@ ul.recent_posts_list {
     right: 20px;
     display: none;
     text-indent: -9999px;
-    background: url(../images/scroll-top-arrow.png) no-repeat left top;
+    background: url(../../storage/images/scroll-top-arrow.png) no-repeat left top;
     z-index: 999;
 }

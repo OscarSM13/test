@@ -43,9 +43,7 @@
     <link href="{{ asset('js/mainmenu/bootstrap.min2.css') }}" rel="stylesheet">
     <link href="{{ asset('js/mainmenu/menu2.css') }}" rel="stylesheet">
     
-    <!-- MasterSlider -->
-	<link rel="stylesheet" href="{{ asset('js/masterslider/style/masterslider.css') }}" />
-    <link rel="stylesheet" href="{{ asset('js/masterslider/skins/default/style.css') }}" />
+    @stack('styles')
 	
     <!-- owl carousel -->
     <link href="{{ asset('js/carouselowl/owl.transitions.css') }}" rel="stylesheet">

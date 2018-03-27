@@ -73,7 +73,7 @@
         <ul class="nav navbar-nav three">
         
         <li class="dropdown">
-            <a href="/home">Home</a>
+            <a href="/">Home</a>
         </li>
                
         <li class="dropdown">
