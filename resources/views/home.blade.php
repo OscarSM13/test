@@ -80,8 +80,8 @@
 
                     <ul>
 
-                        <li class="cbp-item flips1">
-                            <a href="#" class="cbp-caption flips1_front flipscont1">
+                        <li class="cbp-item">
+                            <a href="#" class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
                                     <img src="http://placehold.it/280x210" alt="">
                                 </div>
@@ -93,14 +93,11 @@
                                     </div>
                                 </div>
                             </a>
-                            <div class="flips1_back flipscont1">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur porttitor urna, fringilla auctor diam vulputate id. Mauris eget justo orci. Praesent eu diam eros. Nulla imperdiet libero non tellus rutrum, ac dictum nibh tempor. Aliquam rutrum risus mauris, eget condimentum sapien placerat vel. Donec eu placerat tellus, a euismod dolor. Ut non posuere ligula. Ut id lectus in nisi maximus ultricies nec eu erat. Aenean sem tellus, interdum eget felis sed, malesuada suscipit leo. Vivamus suscipit blandit magna, ac cursus erat ultricies quis. Cras et mauris id tortor pretium auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <p>
-                            </div>
                         </li>
                         <!-- end item -->
 
-                        <li class="cbp-item flips1">
-                            <a href="#" class="cbp-caption flips1_front flipscont1">
+                        <li class="cbp-item">
+                            <a href="#" class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
                                     <img src="http://placehold.it/280x210" alt="">
                                 </div>
@@ -112,14 +109,11 @@
                                     </div>
                                 </div>
                             </a>
-                            <div class="flips1_back flipscont1">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur porttitor urna, fringilla auctor diam vulputate id. Mauris eget justo orci. Praesent eu diam eros. Nulla imperdiet libero non tellus rutrum, ac dictum nibh tempor. Aliquam rutrum risus mauris, eget condimentum sapien placerat vel. Donec eu placerat tellus, a euismod dolor. Ut non posuere ligula. Ut id lectus in nisi maximus ultricies nec eu erat. Aenean sem tellus, interdum eget felis sed, malesuada suscipit leo. Vivamus suscipit blandit magna, ac cursus erat ultricies quis. Cras et mauris id tortor pretium auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <p>
-                            </div>
                         </li>
                         <!-- end item -->
 
-                        <li class="cbp-item flips1">
-                            <a href="#" class="cbp-caption flips1_front flipscont1">
+                        <li class="cbp-item">
+                            <a href="#" class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
                                     <img src="http://placehold.it/280x210" alt="">
                                 </div>
@@ -131,14 +125,11 @@
                                     </div>
                                 </div>
                             </a>
-                            <div class="flips1_back flipscont1">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur porttitor urna, fringilla auctor diam vulputate id. Mauris eget justo orci. Praesent eu diam eros. Nulla imperdiet libero non tellus rutrum, ac dictum nibh tempor. Aliquam rutrum risus mauris, eget condimentum sapien placerat vel. Donec eu placerat tellus, a euismod dolor. Ut non posuere ligula. Ut id lectus in nisi maximus ultricies nec eu erat. Aenean sem tellus, interdum eget felis sed, malesuada suscipit leo. Vivamus suscipit blandit magna, ac cursus erat ultricies quis. Cras et mauris id tortor pretium auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <p>
-                            </div>
                         </li>
                         <!-- end item -->
 
-                        <li class="cbp-item flips1">
-                            <a href="#" class="cbp-caption flips1_front flipscont1">
+                        <li class="cbp-item">
+                            <a href="#" class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
                                     <img src="http://placehold.it/280x210" alt="">
                                 </div>
@@ -150,14 +141,11 @@
                                     </div>
                                 </div>
                             </a>
-                            <div class="flips1_back flipscont1">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur porttitor urna, fringilla auctor diam vulputate id. Mauris eget justo orci. Praesent eu diam eros. Nulla imperdiet libero non tellus rutrum, ac dictum nibh tempor. Aliquam rutrum risus mauris, eget condimentum sapien placerat vel. Donec eu placerat tellus, a euismod dolor. Ut non posuere ligula. Ut id lectus in nisi maximus ultricies nec eu erat. Aenean sem tellus, interdum eget felis sed, malesuada suscipit leo. Vivamus suscipit blandit magna, ac cursus erat ultricies quis. Cras et mauris id tortor pretium auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <p>
-                            </div>
                         </li>
                         <!-- end item -->
 
-                        <li class="cbp-item flips1">
-                            <a href="#" class="cbp-caption flips1_front flipscont1">
+                        <li class="cbp-item">
+                            <a href="#" class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
                                     <img src="http://placehold.it/280x210" alt="">
                                 </div>
@@ -169,15 +157,12 @@
                                     </div>
                                 </div>
                             </a>
-                            <div class="flips1_back flipscont1">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur porttitor urna, fringilla auctor diam vulputate id. Mauris eget justo orci. Praesent eu diam eros. Nulla imperdiet libero non tellus rutrum, ac dictum nibh tempor. Aliquam rutrum risus mauris, eget condimentum sapien placerat vel. Donec eu placerat tellus, a euismod dolor. Ut non posuere ligula. Ut id lectus in nisi maximus ultricies nec eu erat. Aenean sem tellus, interdum eget felis sed, malesuada suscipit leo. Vivamus suscipit blandit magna, ac cursus erat ultricies quis. Cras et mauris id tortor pretium auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <p>
-                            </div>
                         </li>
                         <!-- end item -->
 
-                        <li class="cbp-item flips1">
-                            <a href="#" class="cbp-caption flips1_front flipscont1">
-                                <div class="cbp-caption-defaultWrap ">
+                        <li class="cbp-item">
+                            <a href="#" class="cbp-caption">
+                                <div class="cbp-caption-defaultWrap">
                                     <img src="http://placehold.it/280x210" alt="">
                                 </div>
                                 <div class="cbp-caption-activeWrap">
@@ -188,14 +173,11 @@
                                     </div>
                                 </div>
                             </a>
-                            <div class="flips1_back flipscont1">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur porttitor urna, fringilla auctor diam vulputate id. Mauris eget justo orci. Praesent eu diam eros. Nulla imperdiet libero non tellus rutrum, ac dictum nibh tempor. Aliquam rutrum risus mauris, eget condimentum sapien placerat vel. Donec eu placerat tellus, a euismod dolor. Ut non posuere ligula. Ut id lectus in nisi maximus ultricies nec eu erat. Aenean sem tellus, interdum eget felis sed, malesuada suscipit leo. Vivamus suscipit blandit magna, ac cursus erat ultricies quis. Cras et mauris id tortor pretium auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <p>
-                            </div>
                         </li>
                         <!-- end item -->
 
-                        <li class="cbp-item flips1">
-                            <a href="#" class="cbp-caption flips1_front flipscont1">
+                        <li class="cbp-item">
+                            <a href="#" class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
                                     <img src="http://placehold.it/280x210" alt="">
                                 </div>
@@ -207,14 +189,11 @@
                                     </div>
                                 </div>
                             </a>
-                            <div class="flips1_back flipscont1">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur porttitor urna, fringilla auctor diam vulputate id. Mauris eget justo orci. Praesent eu diam eros. Nulla imperdiet libero non tellus rutrum, ac dictum nibh tempor. Aliquam rutrum risus mauris, eget condimentum sapien placerat vel. Donec eu placerat tellus, a euismod dolor. Ut non posuere ligula. Ut id lectus in nisi maximus ultricies nec eu erat. Aenean sem tellus, interdum eget felis sed, malesuada suscipit leo. Vivamus suscipit blandit magna, ac cursus erat ultricies quis. Cras et mauris id tortor pretium auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <p>
-                            </div>
                         </li>
                         <!-- end item -->
 
-                        <li class="cbp-item flips1">
-                            <a href="#" class="cbp-caption flips1_front flipscont1">
+                        <li class="cbp-item">
+                            <a href="#" class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
                                     <img src="http://placehold.it/280x210" alt="">
                                 </div>
@@ -226,9 +205,6 @@
                                     </div>
                                 </div>
                             </a>
-                            <div class="flips1_back flipscont1">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur porttitor urna, fringilla auctor diam vulputate id. Mauris eget justo orci. Praesent eu diam eros. Nulla imperdiet libero non tellus rutrum, ac dictum nibh tempor. Aliquam rutrum risus mauris, eget condimentum sapien placerat vel. Donec eu placerat tellus, a euismod dolor. Ut non posuere ligula. Ut id lectus in nisi maximus ultricies nec eu erat. Aenean sem tellus, interdum eget felis sed, malesuada suscipit leo. Vivamus suscipit blandit magna, ac cursus erat ultricies quis. Cras et mauris id tortor pretium auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <p>
-                            </div>
                         </li>
                         <!-- end item -->
 
