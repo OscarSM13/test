@@ -2,6 +2,10 @@
 
 @section('title', 'Contact')
 
+@push('styles')
+<link rel="stylesheet" href="{{ asset('js/form/sky-forms2.css') }}" type="text/css" media="all">
+@endpush
+
 @section('content')
 <div class="clearfix"></div>
 
@@ -93,8 +97,10 @@
         </div>
         <div class="clearfix"></div>
         <h4>Find the <strong>Address</strong></h4>
-        
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49208.66213843944!2d2.645735624307838!3d39.56994739481461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12979259c61ac757%3A0xc40d5406c3d058c6!2sPalma%2C+Balearic+Islands%2C+Spain!5e0!3m2!1sen!2sus!4v1522136029872" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+        <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49208.66213843943!2d2.6457356243078407!3d39.56994739481462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12979259c61ac757%3A0xc40d5406c3d058c6!2sPalma+de+Mallorca%2C+Islas+Baleares!5e0!3m2!1ses!2ses!4v1522161314156" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+          <small><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49208.66213843943!2d2.6457356243078407!3d39.56994739481462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12979259c61ac757%3A0xc40d5406c3d058c6!2sPalma+de+Mallorca%2C+Islas+Baleares!5e0!3m2!1ses!2ses!4v1522161314156">View Larger Map</a></small>
+        </div>
 </div>
 </div><!-- end content area -->
 @endsection

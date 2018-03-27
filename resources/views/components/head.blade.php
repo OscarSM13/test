@@ -51,9 +51,7 @@
     
     <!-- cubeportfolio -->
     <link rel="stylesheet" type="text/css" href="{{ asset('js/cubeportfolio/cubeportfolio.min.css') }}">
-    
-    <!-- forms -->
-    <link rel="stylesheet" href="{{ asset('js/form/sky-forms.css') }}" type="text/css" media="all">
+
     
     <!-- tabs -->
     <link rel="stylesheet" type="text/css" href="{{ asset('js/tabs/assets/css/responsive-tabs2.css') }}">

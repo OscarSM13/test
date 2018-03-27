@@ -290,9 +290,7 @@
 @endsection
 
 @push('scripts')
-    <!-- MasterSlider -->
-    <script src="{{ asset('js/masterslider/jquery.easing.min.js') }}"></script>
-    <script src="{{ asset('js/masterslider/masterslider.min.js') }}"></script>
+
 
     <script type="text/javascript">
         (function($) {

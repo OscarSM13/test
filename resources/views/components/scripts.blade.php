@@ -23,6 +23,39 @@
     <script type="text/javascript" src="{{ asset('js/mainmenu/sticky.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/mainmenu/modernizr.custom.75180.js') }}"></script>
 
+    <!-- cubeportfolio -->
+    <script type="text/javascript" src="js/cubeportfolio/jquery.cubeportfolio.min.js"></script>
+    <script type="text/javascript" src="js/cubeportfolio/main.js"></script>
+
+    <!-- Accordion-->
+    <script type="text/javascript" src="{{ asset('js/accordion/jquery.accordion.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/accordion/jquery.easing.1.3.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/accordion/custom.js') }}"></script>
+    <!-- Contact -->
+    <script type="text/javascript">
+            (function($) {
+                "use strict";
+
+                var slider = new MasterSlider();
+                // adds Arrows navigation control to the slider.
+                slider.control('arrows');
+                slider.control('bullets');
+
+                slider.setup('masterslider', {
+                    width: 1400, // slider standard width
+                    height: 580, // slider standard height
+                    space: 0,
+                    speed: 45,
+                    layout: 'fullwidth',
+                    loop: true,
+                    preload: 0,
+                    autoplay: true,
+                    view: "mask"
+                });
+
+            })(jQuery);
+        </script>
+
     <!-- tabs -->
     <script src="{{ asset('js/tabs/assets/js/responsive-tabs.min.js') }}" type="text/javascript"></script>
 

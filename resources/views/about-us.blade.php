@@ -2,6 +2,11 @@
 
 @section('title', 'Contact')
 
+@push('styles')
+<!-- accordion -->
+<link rel="stylesheet" type="text/css" href="{{asset('js/accordion/style.css') }}" />
+@endpush
+
 @section('content')
 <div class="clearfix"></div>
 
