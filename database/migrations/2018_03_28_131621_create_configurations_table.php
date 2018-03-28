@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class EditConfigurationsTable extends Migration
+class CreateConfigurationsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,11 @@ class EditConfigurationsTable extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('configurations', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('key');
+            $table->string('value');
+        });
     }
 
     /**
@@ -23,6 +27,6 @@ class EditConfigurationsTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('configurations');
     }
 }

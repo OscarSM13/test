@@ -24,8 +24,6 @@
         <a href="#" class="navlinks">4</a>
         <a href="#" class="navlinks">Next ></a>
     </div><!-- /# end pagination -->
-
-    </div>
 </div><!-- end content left side -->
 
 @include('components.columnBlog')
