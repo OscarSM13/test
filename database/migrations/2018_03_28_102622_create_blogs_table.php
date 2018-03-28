@@ -16,6 +16,7 @@ class CreateBlogsTable extends Migration
         Schema::create('blog_categories', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title', 200);
+            $table->timestamps();
         });
 
         Schema::create('blogs', function (Blueprint $table) {
@@ -23,6 +24,7 @@ class CreateBlogsTable extends Migration
             $table->string('title', 180);
             $table->text('description');
             $table->datetime('publish_date');
+            $table->timestamps();
 
             $table->integer('blog_category_id')->unsigned()->nullable();
             $table->foreign('blog_category_id')->references('id')->on('blog_categories')
@@ -32,12 +34,14 @@ class CreateBlogsTable extends Migration
         Schema::create('blog_tags', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title', 75);
+            $table->timestamps();
         });
 
         Schema::create('blog_tags_blogs', function (Blueprint $table) {
             $table->integer('blog_id')->unsigned();
             $table->foreign('blog_id')->references('id')->on('blogs')
                 ->onDelete('cascade')->onUpdate('cascade');
+            $table->timestamps();
 
             $table->integer('blog_tag_id')->unsigned();
             $table->foreign('blog_tag_id')->references('id')->on('blog_tags')

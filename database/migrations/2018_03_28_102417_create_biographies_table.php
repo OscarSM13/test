@@ -23,12 +23,14 @@ class CreateBiographiesTable extends Migration
             $table->string('phone2', 20)->nullable();
             $table->string('job', 75);
             $table->text('description');
+            $table->timestamps();
         });
 
         Schema::create('biography_educations', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
             $table->text('description');
+            $table->timestamps();
 
             $table->integer('biography_id')->unsigned();
             $table->foreign('biography_id')->references('id')->on('biographies')

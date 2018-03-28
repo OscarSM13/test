@@ -18,7 +18,8 @@ class CreatePracticsAreasTable extends Migration
             $table->string('title', 200);
             $table->text('description');
             $table->string('image');
-
+            $table->timestamps();
+            
             $table->integer('parent_id')->unsigned()->nullable();
             $table->foreign('parent_id')->references('id')->on('practice_areas')
                 ->onDelete('set null')->onUpdate('cascade');
@@ -28,7 +29,7 @@ class CreatePracticsAreasTable extends Migration
             $table->integer('biography_id')->unsigned();
             $table->foreign('biography_id')->references('id')->on('biographies')
                 ->onDelete('cascade')->onUpdate('cascade');
-
+            $table->timestamps();
             $table->integer('practice_area_id')->unsigned();
             $table->foreign('practice_area_id')->references('id')->on('practice_areas')
                 ->onDelete('cascade')->onUpdate('cascade');
