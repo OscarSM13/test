@@ -21,13 +21,14 @@ class CreateBlogsTable extends Migration
 
         Schema::create('blogs', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('image');
             $table->string('title', 180);
             $table->text('description');
             $table->datetime('publish_date');
             $table->timestamps();
 
-            $table->integer('blog_category_id')->unsigned()->nullable();
-            $table->foreign('blog_category_id')->references('id')->on('blog_categories')
+            $table->integer('category_id')->unsigned()->nullable();
+            $table->foreign('category_id')->references('id')->on('blog_categories')
                 ->onDelete('set null')->onUpdate('cascade');
         });
 
