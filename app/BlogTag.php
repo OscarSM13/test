@@ -10,4 +10,7 @@ class BlogTag extends Model
         'title',
     ];
 
+    public function blogs() {
+        return $this->belongsToMany(Blog::class);
+    }
 }

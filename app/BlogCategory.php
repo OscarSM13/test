@@ -10,5 +10,7 @@ class BlogCategory extends Model
         'title',
     ];
 
-
+    public function blogs() {
+        return $this->hasMany(Blog::class);
+    }
 }

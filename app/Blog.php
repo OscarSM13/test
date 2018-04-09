@@ -15,4 +15,12 @@ class Blog extends Model
     protected $dates = [
         'publish_date'
     ];
+
+    public function category() {
+        return $this->belongsTo(BlogCategory::class);
+    }
+
+    public function tags() {
+        return $this->belongsToMany(BlogTag::class);
+    }
 }
