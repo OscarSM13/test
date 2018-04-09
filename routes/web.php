@@ -12,9 +12,6 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/', function () {
     return view('home');
 });
 Route::get('/blog', function () {
@@ -32,4 +29,10 @@ Route::get('/layout', function () {
 
 Route::get('/singlePost', function () {
     return view('singlePost');
+});
+
+Route::get('test', function() {
+    $test = \App\Blog::find(1);
+    $test->category()->associate(new \App\BlogCategory(['title' => 'Testing']));
+    $test->save();
 });
