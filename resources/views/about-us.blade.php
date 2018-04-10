@@ -46,7 +46,7 @@
         
         <div class="cinfo">
         	
-            <img src="images/shape1.jpg" alt="" class="shape1" />
+            <img src="/storage/images/shape1.jpg" alt="" class="shape1" />
             
         	<h5>Alex Jacobson</h5>
 			<em>Founder and Manager</em>
@@ -71,7 +71,7 @@
         
         <div class="cinfo">
         	
-            <img src="images/shape1.jpg" alt="" class="shape1" />
+            <img src="/storage/images/shape1.jpg" alt="" class="shape1" />
             
         	<h5>Marcos Heriberto</h5>
 			<em>Partner</em>
