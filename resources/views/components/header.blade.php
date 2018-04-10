@@ -77,7 +77,7 @@
         </li>
                
         <li class="dropdown">
-            <a href="/blog">Blog</a>
+            <a href="{{ route('blog') }}">Blog</a>
         </li>
         
         <li class="dropdown">
