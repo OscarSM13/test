@@ -11,28 +11,19 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
-Route::get('/blog', function () {
-    return view('blog');
-});
+Route::name('home')->get('/', 'HomeController@index');
+
+Route::name('blog')->get('/blog', 'BlogController@index');
+Route::name('blogEntry')->get('/blog/{id}', 'BlogController@single');
+
 Route::get('/about-us', function () {
     return view('about-us');
 });
+
 Route::get('/contact', function () {
     return view('contact');
 });
+
 Route::get('/layout', function () {
     return view('layouts.web');
-});
-
-Route::get('/singlePost', function () {
-    return view('singlePost');
-});
-
-Route::get('test', function() {
-    $test = \App\Blog::find(1);
-    $test->category()->associate(new \App\BlogCategory(['title' => 'Testing']));
-    $test->save();
 });
