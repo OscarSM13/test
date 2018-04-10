@@ -4,16 +4,10 @@
       <div class="sidebar_title">
          <h4>Site <i>Categories</i></h4>
       </div>
+      @foreach($category as $categories)
       <ul class="arrows_list1">
-         <li><a href="#"><i class="fa fa-caret-right"></i> Economics</a></li>
-         <li><a href="#"><i class="fa fa-caret-right"></i> Social Media</a></li>
-         <li><a href="#"><i class="fa fa-caret-right"></i> Economics</a></li>
-         <li><a href="#"><i class="fa fa-caret-right"></i> Online Gaming</a></li>
-         <li><a href="#"><i class="fa fa-caret-right"></i> Entertainment</a></li>
-         <li><a href="#"><i class="fa fa-caret-right"></i> Technology</a></li>
-         <li><a href="#"><i class="fa fa-caret-right"></i> Make Money Online</a></li>
-         <li><a href="#"><i class="fa fa-caret-right"></i> Photography</a></li>
-         <li><a href="#"><i class="fa fa-caret-right"></i> Web Tutorials</a></li>
+         <li><a href="#"><i class="fa fa-caret-right"></i> {{ $categories->title }}</a></li>
+         @endforeach
       </ul>
    </div>
    <!-- end section -->
@@ -50,21 +44,13 @@
             <!-- end popular posts -->
             <div id="tab2" class="tab_content">
                <ul class="recent_posts_list">
-                  <li>
-                     <span><a href="#"><img src="http://placehold.it/50x50" alt="" /></a></span>
-                     <a href="#">Various versions has evolved over the years</a>
-                     <i>October 18, 2014</i>
-                  </li>
-                  <li>
-                     <span><a href="#"><img src="http://placehold.it/50x50" alt="" /></a></span>
-                     <a href="#">Rarious versions has evolve over the years</a>
-                     <i>October 17, 2014</i>
-                  </li>
-                  <li class="last">
-                     <span><a href="#"><img src="http://placehold.it/50x50" alt="" /></a></span>
-                     <a href="#">Marious versions has evolven over the years</a>
-                     <i>October 16, 2014</i>
-                  </li>
+                   @foreach($recent as $item)
+                    <li>
+                        <span><a href="#"><img src="{{ $item->image }}" alt="" height="50" width="50" /></a></span>
+                        <a href="#">{{ $item->title }}</a>
+                        <i>October 18, 2014</i>
+                    </li>
+                  @endforeach
                </ul>
             </div>
             <!-- end popular articles -->
@@ -107,11 +93,9 @@
          <h4>Site <i>Archives</i></h4>
       </div>
       <ul class="list2">
-         <li><a href="#"><i class="fa fa-long-arrow-right"></i> October 2014</a></li>
-         <li><a href="#"><i class="fa fa-long-arrow-right"></i> September 2014</a></li>
-         <li><a href="#"><i class="fa fa-long-arrow-right"></i> August 2014</a></li>
-         <li><a href="#"><i class="fa fa-long-arrow-right"></i> July 2014</a></li>
-         <li><a href="#"><i class="fa fa-long-arrow-right"></i> June 2014</a></li>
+          @foreach ($site_archives as $archive)
+         <li><a href="#"><i class="fa fa-long-arrow-right"></i> {{$archive->publish_date->format('F Y')}} </a></li>
+         @endforeach
       </ul>
    </div>
    <!-- end section -->
