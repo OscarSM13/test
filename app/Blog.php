@@ -10,6 +10,7 @@ class Blog extends Model
         'title', 
         'description', 
         'publish_date',
+        'category_id',
     ];
 
     protected $dates = [
