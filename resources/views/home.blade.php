@@ -223,6 +223,7 @@
 
             </div>
         </div>
+
     <div class="clearfix"></div>
 
         <div class="feature_sec8">
@@ -231,56 +232,34 @@
                 <div class="one">
                     <h2 class="small2">Recent <strong>Blogs</strong></h2>
                 </div>
+                @foreach($recent as $item)
+                    @if($loop->first)
+                        <div class="one_half">
+                    @else
+                        <div class="one_half last">  
+                    @endif
+                            <div class="small two">
 
-                <div class="one_half">
+                                <div style="display: flex">
 
-                    <div class="small two">
+                                    <div class="left">
+                                        <a href="#"><img src="{{$item->image}}" alt="" /></a>
+                                        <div class="date"><a href="#"><strong>{{ $item->publish_date->format('d') }}</strong> {{ $item->publish_date->format('M') }}</a></div>
+                                        <div class="comment"><a href="#"><i class="fa fa-comments fa-2x"></i>&nbsp; 257</a></div>
+                                    </div>
 
-                        <div style="display: flex">
+                                    <div class="right">
+                                        <div class="big_text2"><a href={{ route('blogEntry', $item->id) }}">{{ $item->title }}</a></div>
+                                        <br />
+                                        <p>{{$item->description}}</p>
+                                    </div>
 
-                            <div class="left">
-                                <a href="#"><img src="http://placehold.it/100x100" alt="" /></a>
-                                <div class="date"><a href="#"><strong>27</strong> NOV</a></div>
-                                <div class="comment"><a href="#"><i class="fa fa-comments fa-2x"></i>&nbsp; 257</a></div>
+                                </div>
+                                <!-- end section -->
                             </div>
-
-                            <div class="right">
-                                <div class="big_text2"><a href="#">There are many variations passages desktop lorem Ipsum available.</a></div>
-                                <br />
-                                <p>But the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
-                                    anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet to repeat predefined chunks as necessary, making this the first true generator on the normal distribution Internet.</p>
-                            </div>
-
                         </div>
-                        <!-- end section -->
-                    </div>
-                    
-                </div>
+                    @endforeach
                 <!-- end all section -->
-                <div class="one_half last">
-                
-                    <div class="small two">
-
-                        <div style="display: flex">
-
-                            <div class="left">
-                                <a href="#"><img src="http://placehold.it/100x100" alt="" /></a>
-                                <div class="date"><a href="#"><strong>27</strong> NOV</a></div>
-                                <div class="comment"><a href="#"><i class="fa fa-comments fa-2x"></i>&nbsp; 257</a></div>
-                            </div>
-
-                            <div class="right">
-                                <div class="big_text2"><a href="#">There are many variations passages desktop lorem Ipsum available.</a></div>
-                                <br />
-                                <p>But the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
-                                    anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet to repeat predefined chunks as necessary, making this the first true generator on the normal distribution Internet.</p>
-                            </div>
-
-                        </div>
-                        <!-- end section -->
-                    </div>
-
-                    </div>
             </div>
                     
         </div>
