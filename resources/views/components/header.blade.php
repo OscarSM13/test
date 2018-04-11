@@ -19,24 +19,14 @@
             
             <div class="right">
             	
-                <div class="topsitesearch">
-                    <form method="get" id="topsitesearchform" action="index.html">
-                        <div>
-                        <input class="input-text" name="s" id="s" value="Search..." onFocus="if (this.value == 'Search...') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'Search...';}" type="text" />
-                        <input id="searchsubmit" value="Search" type="submit" />
-                        </div>
-                    </form>
-                </div><!-- end site search -->
                 
                 <ul class="topsocial">
                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                     <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                    <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                 </ul>
             	
-                <a href="#" class="smbut">Free Consultations</a>
+                <a href="{{route('contact')}}" class="smbut">Free Consultations</a>
                    
                 <div class="clearfix"></div>
                 
@@ -85,7 +75,7 @@
         </li>
         
         <li class="dropdown">
-            <a href="/contact" class="@if(Route::getCurrentRoute()->getName() == 'contact') active @endif">Contact</a>
+            <a href="{{ route('contact') }}" class="@if(Route::getCurrentRoute()->getName() == 'contact') active @endif">Contact</a>
         </li>
         
         

@@ -23,7 +23,7 @@
         <div class="right">
         
             <h5>Address Location</h5>
-            <h6>2901 Marmora Road, Glassgow, Seattle, WA 98122-1090 Fax: (888) 123-456-7899 <br /> <a href="#">View Map</a></h6>
+            <h6>2901 Marmora Road, Glassgow, Seattle, WA 98122-1090 Fax: (888) 123-456-7899 <br /> <a href="{{ route('contact') }}">View Map</a></h6>
         
         </div><!-- end section -->
     
