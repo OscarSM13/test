@@ -1001,7 +1001,7 @@
     width: 100%;
     text-align: center;
     padding: 120px 0px 100px 0px;
-    background: url("../images/darkgray-bg.png");
+    background: url("../storage/images/darkgray-bg.png");
     background-attachment: fixed;
     background-origin: initial;
     background-clip: initial;
@@ -1670,14 +1670,14 @@
     float: left;
     width: 100%;
     height: 400px;
-    background: #000 url(../images/darkgray-bg2.png) no-repeat center top;
+    background: #000 url(../storage/images/darkgray-bg2.png) no-repeat center top;
 }
 
 .page_title.two {
     float: left;
     width: 100%;
     height: 400px;
-    background: #000 url(../images/darkgray-bg2.png) no-repeat center top;
+    background: #000 url(../storage/images/darkgray-bg2.png) no-repeat center top;
 }
 
 .page_title h1 {
@@ -1692,7 +1692,7 @@
     font-size: 50px;
     font-weight: bold;
     margin-bottom: 0px;
-    background: rgba(215, 2, 4, 0.9) url(../images/aroow3.png) no-repeat right 40px;
+    background: rgba(215, 2, 4, 0.9) url(../storage/images/aroow3.png) no-repeat right 40px;
 }
 
 .page_title2 {
