@@ -57,7 +57,7 @@
 
             <a href="#"><i class="fa fa-facebook"></i></a>
             <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-google-plus"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
             <br />
             <a href="attorneys-fullbio.html" class="button1">Read Full Bio</a>
                  
@@ -82,7 +82,7 @@
 
             <a href="#"><i class="fa fa-facebook"></i></a>
             <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-google-plus"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
             <br />
             <a href="attorneys-fullbio.html" class="button1">Read Full Bio</a>
                  
