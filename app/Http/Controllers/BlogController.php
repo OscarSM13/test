@@ -8,7 +8,7 @@ use App\Blog;
 class BlogController extends Controller
 {
     public function index() {
-        $blogs = Blog::paginate(10);
+        $blogs = Blog::paginate(6);
 
         return view('blog')
             ->with('blogs', $blogs);
@@ -16,6 +16,9 @@ class BlogController extends Controller
 
     public function single($id) {
         $singleBlog = Blog::find($id);
+
+        $singleBlog->views_count += 1;
+        $singleBlog->save();
 
         return view('singlePost')
             ->with('blog', $singleBlog);
