@@ -12,8 +12,8 @@
 <div class="page_title2">
 <div class="container">
 	
-    <h1>Contact Us</h1>
-    <div class="pagenation">&nbsp;<a href="index.html">Home</a> <i>/</i> <a href="#">Contact</a> <i>/</i> Contact Us</div>
+    <h1>CONTACT</h1>
+    <div class="pagenation">&nbsp;<a href="{{ route('home')}}">Home</a> <i>/</i> Contact </div>
     
     
 </div>

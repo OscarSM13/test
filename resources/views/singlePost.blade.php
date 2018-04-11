@@ -8,7 +8,7 @@
 <div class="container">
 	
     <h1>Single Post</h1>
-    <div class="pagenation">&nbsp;<a href="index.html">Home</a> <i>/</i> <a href="#">Blog</a> <i>/</i> Single Post</div>
+    <div class="pagenation">&nbsp;<a href="{{ route('home')}}">Home</a> <i>/</i> <a href="{{ route('blog')}}">Blog</a> <i>/</i> Single Post</div>
      
 </div>
 </div><!-- end page title --> 
@@ -22,7 +22,7 @@
         	
         <div class="blog_post">	
             <div class="blog_postcontent">
-            <div class="image_frame"><a href="#"><img src="{{ $blog->image }}" alt="" /></a></div>
+            <div class="image_frame"><img src="{{ $blog->image }}" alt="" /></div>
             <h3>{{ $blog->title }}</h3>
                 <ul class="post_meta_links">
 					<li><a href="#" class="date">{{ $blog->publish_date->format('d/m/Y') }}</a></li>

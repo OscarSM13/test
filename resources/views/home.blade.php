@@ -243,13 +243,12 @@
                                 <div style="display: flex">
 
                                     <div class="left">
-                                        <a href="#"><img src="{{$item->image}}" alt="" /></a>
+                                        <a href="{{ route('blogEntry', $item->id) }}"><img src="{{$item->image}}" alt="" /></a>
                                         <div class="date"><a href="#"><strong>{{ $item->publish_date->format('d') }}</strong> {{ $item->publish_date->format('M') }}</a></div>
-                                        <div class="comment"><a href="#"><i class="fa fa-comments fa-2x"></i>&nbsp; 257</a></div>
                                     </div>
 
                                     <div class="right">
-                                        <div class="big_text2"><a href={{ route('blogEntry', $item->id) }}">{{ $item->title }}</a></div>
+                                        <div class="big_text2"><a href={{ route('blogEntry', $item->id) }}>{{ $item->title }}</a></div>
                                         <br />
                                         <p>{{$item->description}}</p>
                                     </div>
