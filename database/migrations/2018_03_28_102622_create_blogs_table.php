@@ -25,11 +25,14 @@ class CreateBlogsTable extends Migration
             $table->string('title', 180);
             $table->text('description');
             $table->datetime('publish_date');
-            $table->timestamps();
+            $table->integer('views_count')->default(0);
+            
 
             $table->integer('category_id')->unsigned()->nullable();
             $table->foreign('category_id')->references('id')->on('blog_categories')
                 ->onDelete('set null')->onUpdate('cascade');
+            
+            $table->timestamps();
         });
 
         Schema::create('blog_tags', function (Blueprint $table) {
