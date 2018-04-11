@@ -29,7 +29,7 @@
 					@if($blog->category)
 					<li class="post_categoty"><i>in:</i> <a href="#">{{ $blog->category->title }}</a></li>
 					@endif
-                    <li class="post_comments"><i>note:</i> <a href="#">18 Comments</a></li>
+                    {{--<li class="post_comments"><i>note:</i> <a href="#">18 Comments</a></li>--}}
                 </ul>
              <div class="clearfix"></div>
              <div class="margin_top1"></div>
