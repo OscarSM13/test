@@ -23,3 +23,7 @@ Route::name('contact')->get('/contact', 'ContactController@index');
 Route::get('/layout', function () {
     return view('layouts.web');
 });
+
+Route::get('/area', function () {
+    return view('area');
+});
