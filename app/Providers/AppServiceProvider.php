@@ -24,6 +24,11 @@ class AppServiceProvider extends ServiceProvider
                 ->limit(3)
                 ->get();
 
+            $popular = Blog::orderBy('views_count', 'DESC')
+                ->whereDate('publish_date', '<', Carbon::today())
+                ->limit(3)
+                ->get();
+
             $siteArchive = Blog::orderBy('publish_date', 'DESC')
                 ->whereDate('publish_date', '<', Carbon::today())
                 ->limit(12)
@@ -31,7 +36,8 @@ class AppServiceProvider extends ServiceProvider
 
             $view->with('recent', $recentBlogs)
                 ->with('category', BlogCategory::all())
-                ->with('site_archives', $siteArchive);
+                ->with('site_archives', $siteArchive)
+                ->with('popular', $popular);
             
         });
 
