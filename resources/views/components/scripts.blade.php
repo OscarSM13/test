@@ -24,8 +24,9 @@
     <script type="text/javascript" src="{{ asset('js/mainmenu/modernizr.custom.75180.js') }}"></script>
 
     <!-- cubeportfolio -->
-    <script type="text/javascript" src="js/cubeportfolio/jquery.cubeportfolio.min.js"></script>
-    <script type="text/javascript" src="js/cubeportfolio/main.js"></script>
+    <script type="text/javascript" src="{{ asset('js/cubeportfolio/jquery.cubeportfolio.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/cubeportfolio/main.js') }}"></script>
+
 
     <!-- Accordion-->
     <script type="text/javascript" src="{{ asset('js/accordion/jquery.accordion.js') }}"></script>
@@ -58,5 +59,8 @@
 
     <!-- tabs -->
     <script src="{{ asset('js/tabs/assets/js/responsive-tabs.min.js') }}" type="text/javascript"></script>
+
+    <!-- owl carousel -->
+    <script src="{{ asset('js/carouselowl/owl.carousel.js') }}"></script>
 
    

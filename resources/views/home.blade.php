@@ -226,44 +226,26 @@
 
     <div class="clearfix"></div>
 
-        <div class="feature_sec8">
+        <div class="feature_sec3">
             <div class="container">
-
-                <div class="one">
-                    <h2 class="small2">Recent <strong>Blogs</strong></h2>
+                <div class="one_third hpeosays" data-anim-type="fadeIn" data-anim-delay="700">
+                    <h2 class="small">Why Clients <strong>Love Us</strong></h2>
+                    <div id="owl-demo3" class="owl-carousel small">    
+                        <div>
+                            <img src="http://placehold.it/116x126" alt="" />
+                            
+                            <p><strong>Lorem that more</strong> less normal distribution of letters as opposed to using content here content making it look like readable english many web page editors now used model structure looks Ipsum always and a of model sentence structures to generate which looks.</p>
+                            
+                            <b>- Ricky Holness, <em>additional info</em></b>
+                            
+                            <div class="divider_line21 last"></div>
+                            
+                        </div><!-- end section -->
+                    </div>
+              
                 </div>
-                @foreach($recent as $item)
-                    @if($loop->first)
-                        <div class="one_half">
-                    @else
-                        <div class="one_half last">  
-                    @endif
-                            <div class="small two">
-
-                                <div style="display: flex">
-
-                                    <div class="left">
-                                        <a href="{{ route('blogEntry', $item->id) }}"><img src="{{$item->image}}" alt="" /></a>
-                                        <div class="date"><a href="#"><strong>{{ $item->publish_date->format('d') }}</strong> {{ $item->publish_date->format('M') }}</a></div>
-                                    </div>
-
-                                    <div class="right">
-                                        <div class="big_text2"><a href={{ route('blogEntry', $item->id) }}>{{ $item->title }}</a></div>
-                                        <br />
-                                        <p>{{$item->description}}</p>
-                                    </div>
-
-                                </div>
-                                <!-- end section -->
-                            </div>
-                        </div>
-                    @endforeach
-                <!-- end all section -->
-            </div>
-                    
+            </div><!-- end all section -->
         </div>
-                    
-    </div>
 
 @endsection
 
