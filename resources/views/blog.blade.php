@@ -7,8 +7,8 @@
 <div class="page_title2">
     <div class="container">
 
-        <h1>With Medium Image</h1>
-        <div class="pagenation">&nbsp;<a href="index.html">Home</a> <i>/</i> <a href="#">Blog</a> <i>/</i> With Medium Image</div>
+        <h1>BLOGS</h1>
+        <div class="pagenation">&nbsp;<a href="{{route('home')}}">Home</a> <i>/</i> Blog</div>
 
     </div>
 </div><!-- end page title -->
@@ -22,7 +22,7 @@
                 {{ $blogs->links() }}
             </div>
         </div>
-
+        
         @include('components.columnBlog')
     </div>
 </div>
