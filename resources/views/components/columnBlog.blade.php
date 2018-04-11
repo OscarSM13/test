@@ -4,10 +4,10 @@
       <div class="sidebar_title">
          <h4>Site <i>Categories</i></h4>
       </div>
-      @foreach($category as $categories)
-      <ul class="arrows_list1">
-         <li><a href="#"><i class="fa fa-caret-right"></i> {{ $categories->title }}</a></li>
-         @endforeach
+        <ul class="arrows_list1">
+        @foreach($category as $categories)
+            <li><a href="#"><i class="fa fa-caret-right"></i> {{ $categories->title }}</a></li>
+        @endforeach
       </ul>
    </div>
    <!-- end section -->
@@ -24,21 +24,13 @@
          <div class="tab_container">
             <div id="tab1" class="tab_content">
                <ul class="recent_posts_list">
+                   @foreach($popular as $populars)
                   <li>
-                     <span><a href="#"><img src="http://placehold.it/50x50" alt="" /></a></span>
-                     <a href="#">Publishing packag esanse web page editos</a>
+                     <span><a href="{{ route('blogEntry',$populars->id )}}"><img src="{{$populars->image}}" alt="" with="50px" height="50px" /></a></span>
+                     <a href="{{ route('blogEntry', $populars->id )}}">{{ $populars->title }}</a>
                      <i>October 13, 2014</i>
                   </li>
-                  <li>
-                     <span><a href="#"><img src="http://placehold.it/50x50" alt="" /></a></span>
-                     <a href="#">Sublishing packag esanse web page editos</a>
-                     <i>October 12, 2014</i>
-                  </li>
-                  <li class="last">
-                     <span><a href="#"><img src="http://placehold.it/50x50" alt="" /></a></span>
-                     <a href="#">Mublishing packag esanse web page editos</a>
-                     <i>October 11, 2014</i>
-                  </li>
+                  @endforeach
                </ul>
             </div>
             <!-- end popular posts -->
@@ -46,8 +38,8 @@
                <ul class="recent_posts_list">
                    @foreach($recent as $item)
                     <li>
-                        <span><a href="#"><img src="{{ $item->image }}" alt="" height="50" width="50" /></a></span>
-                        <a href="#">{{ $item->title }}</a>
+                        <span><a href="{{ route('blogEntry', $item->id) }}"><img src="{{ $item->image }}" alt="" height="50" width="50" /></a></span>
+                        <a href="{{ route('blogEntry', $item->id) }}">{{ $item->title }}</a>
                         <i>October 18, 2014</i>
                     </li>
                   @endforeach
