@@ -16,13 +16,9 @@ Route::name('home')->get('/', 'HomeController@index');
 Route::name('blog')->get('/blog', 'BlogController@index');
 Route::name('blogEntry')->get('/blog/{id}', 'BlogController@single');
 
-Route::get('/about-us', function () {
-    return view('about-us');
-});
+Route::name('about-us')->get('/about-us','AboutUsController@index');
 
-Route::get('/contact', function () {
-    return view('contact');
-});
+Route::name('contact')->get('/contact', 'ContactController@index');
 
 Route::get('/layout', function () {
     return view('layouts.web');

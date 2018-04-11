@@ -72,21 +72,20 @@
       
         <ul class="nav navbar-nav three">
         
-        <li class="dropdown">
-            <a href="/">Home</a>
+        <li class="dropdown" >
+            <a href="/" class="@if(Route::getCurrentRoute()->getName() == 'home') active @endif">Home</a>
         </li>
                
         <li class="dropdown">
-            <a href="{{ route('blog') }}">Blog</a>
+            <a href="{{ route('blog') }}" class="@if(Route::getCurrentRoute()->getName() == 'blog') active @endif">Blog</a>
         </li>
         
         <li class="dropdown">
-            <a href="/about-us">About Us</a>
+            <a href="{{ route('about-us') }}" class="@if(Route::getCurrentRoute()->getName() == 'about-us') active @endif">About Us</a>
         </li>
         
         <li class="dropdown">
-            <a href="/contact" >Contact</a>
-
+            <a href="/contact" class="@if(Route::getCurrentRoute()->getName() == 'contact') active @endif">Contact</a>
         </li>
         
         
