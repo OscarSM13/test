@@ -18,16 +18,27 @@
             </div><!-- end left -->
             
             <div class="right">
-            	
-                
+
+
                 <ul class="topsocial">
                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                     <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                     <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                 </ul>
-            	
+                
+                @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                        
+                <a rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+                            {{ $properties['native'] }}
+                        </a>
+
+                @endforeach
                 <a href="{{route('contact')}}" class="smbut">Free Consultations</a>
-                   
+                
+                
+                    
+                
+                
                 <div class="clearfix"></div>
                 
                 <p>Call Us Confidentially Now: <strong>(888) 123-456-7890</strong></p>
@@ -65,9 +76,13 @@
         <li class="dropdown" >
             <a href="/" class="@if(Route::getCurrentRoute()->getName() == 'home') active @endif">Home</a>
         </li>
-               
+            
         <li class="dropdown">
             <a href="{{ route('blog') }}" class="@if(Route::getCurrentRoute()->getName() == 'blog') active @endif">Blog</a>
+        </li>
+        
+        <li class="dropdown">
+            <a href="{{ '/area' }}" class="@if(Route::getCurrentRoute()->getName() == 'area') active @endif">Practice Areas</a>
         </li>
         
         <li class="dropdown">
