@@ -26,18 +26,23 @@
                     <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                 </ul>
                 
-                @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
-                        
-                <a rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+                <div class="dropdown" style="display:inline-block; z-index:10000";>
+                    <button class="btn btn-default dropdown-toggle" type="button" id="lang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        {{ LaravelLocalization::getCurrentLocaleName() }}
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu button-languages" aria-labelledby="lang">
+                    @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                        <li>
+                            <a rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
                             {{ $properties['native'] }}
-                        </a>
+                            </a>
+                        </li>
+                    @endforeach
+                    </ul>
+                </div>
 
-                @endforeach
                 <a href="{{route('contact')}}" class="smbut">{{ trans('header.consultation') }}</a>
-                
-                
-                    
-                
                 
                 <div class="clearfix"></div>
                 
@@ -91,9 +96,7 @@
         
         <li class="dropdown">
             <a href="{{ route('contact') }}" class="@if(Route::getCurrentRoute()->getName() == 'contact') active @endif">{{trans('header.contact')}}</a>
-        </li>
-        
-        
+        </li>       
         
         </ul>
         
