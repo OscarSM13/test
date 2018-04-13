@@ -10,6 +10,10 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+use App\Blog;
+use Carbon\Carbon;
+
 Route::group([
     'prefix' => LaravelLocalization::setLocale(),
     'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
@@ -26,5 +30,14 @@ Route::group([
 
     Route::get('/area', function () {
         return view('area');
+    });
+
+    Route::get('test', function() {
+        $blog = Blog::create([
+            'image' => 'http://via.placeholder.com/800x600',
+            'title' => 'Test',
+            'description' => 'Test',
+            'publish_date' => Carbon::now()
+        ]);
     });
 });
