@@ -226,6 +226,18 @@
 
 /* top navigation */
 
+
+/* Oscar */
+
+#menu-lenguages {
+    display: inline-block;
+    z-index: 10000;
+}
+
+#button-lenguages {
+    border: 0;
+}
+
 .top_nav {
     float: left;
     width: 100%;
