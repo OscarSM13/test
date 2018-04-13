@@ -3,10 +3,15 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-
+use Spatie\Translatable\HasTranslations;
 class Blog extends Model
 {
+    use HasTranslations;
+    
+    public $translatable = ['title', 'description'];
+
     protected $fillable = [
+        'image',
         'title', 
         'description', 
         'publish_date',
@@ -24,4 +29,5 @@ class Blog extends Model
     public function tags() {
         return $this->belongsToMany(BlogTag::class);
     }
+
 }

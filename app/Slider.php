@@ -3,7 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-
+use Spatie\Translatable\HasTranslations;
 class Slider extends Model
 {
     protected $fillable = [
@@ -13,5 +13,9 @@ class Slider extends Model
         'button',
         'link',
     ];
+
+    use HasTranslations;
+    
+    public $translatable = ['title', 'description', 'button'];
 
 }
