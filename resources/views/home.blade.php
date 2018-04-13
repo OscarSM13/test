@@ -55,15 +55,14 @@
     <div class="container">
 
         <div class="title11">
-            <h2>Welcome to Law Firm - Providing Legal Help
-                <em>Experience .Reliability .Ethics</em>
+            <h2>{{ trans('home.title') }}
+                <em>{{ trans('home.subtitle') }}</em>
                 <span class="line"></span></h2>
         </div>
 
-        <p>There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form by injected humour or randomised words which looks anitime even believable. If you are going to use passage of lorem
-            Ipsum you need to be sure there is anything works lorem ipsum as their default model text and search for loremipsum will uncover many web sites still in their infancy various versions have evolved over the years.</p>
+        <p>{{ trans('home.explanation') }}</p>
 
-        <h5>Get your Free Consultation <strong class="animate" data-anim-type="fadeIn" data-anim-delay="300">(888) 123-456-7890</strong> Available 24/7 </h5>
+        <h5>{{ trans('home.consultation') }} <strong class="animate" data-anim-type="fadeIn" data-anim-delay="300">{{ trans('home.numberPhone') }}</strong> {{ trans('home.available') }} </h5>
 
     </div>
 </div>
@@ -75,7 +74,7 @@
 
                 <div class="title11">
 
-                    <h2>Practice <strong>Areas</strong>
+                    <h2>{{ trans('home.practice') }} <strong>{{ trans('home.areas') }}</strong>
                         <span class="line2"></span></h2>
 
                 </div>
@@ -87,14 +86,14 @@
                     <ul>
 
                         <li class="cbp-item">
-                            <a href="#" class="cbp-caption">
+                            <a href="/area" class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
                                     <img src="http://placehold.it/280x210" alt="">
                                 </div>
                                 <div class="cbp-caption-activeWrap">
                                     <div class="cbp-l-caption-alignLeft">
                                         <div class="cbp-l-caption-body">
-                                            <div class="cbp-l-caption-title"><i class="fa fa-briefcase"></i> <br /> <strong>Business &amp; Financial</strong></div>
+                                            <div class="cbp-l-caption-title"><i class="fa fa-briefcase"></i> <br /> <strong>{{ trans('home.area1') }}</strong></div>
                                         </div>
                                     </div>
                                 </div>
@@ -110,7 +109,7 @@
                                 <div class="cbp-caption-activeWrap">
                                     <div class="cbp-l-caption-alignLeft">
                                         <div class="cbp-l-caption-body">
-                                            <div class="cbp-l-caption-title"><i class="fa fa-home"></i> <br /> <strong>Real Estate &amp; Land</strong></div>
+                                            <div class="cbp-l-caption-title"><i class="fa fa-home"></i> <br /> <strong>{{ trans('home.area2') }}</strong></div>
                                         </div>
                                     </div>
                                 </div>
@@ -126,7 +125,7 @@
                                 <div class="cbp-caption-activeWrap">
                                     <div class="cbp-l-caption-alignLeft">
                                         <div class="cbp-l-caption-body">
-                                            <div class="cbp-l-caption-title"><i class="fa fa-medkit"></i> <br /> <strong>Medical Malpractice</strong></div>
+                                            <div class="cbp-l-caption-title"><i class="fa fa-medkit"></i> <br /> <strong>{{ trans('home.area3') }}</strong></div>
                                         </div>
                                     </div>
                                 </div>
@@ -142,7 +141,7 @@
                                 <div class="cbp-caption-activeWrap">
                                     <div class="cbp-l-caption-alignLeft">
                                         <div class="cbp-l-caption-body">
-                                            <div class="cbp-l-caption-title"><i class="fa fa-car"></i> <br /> <strong>Vehicle Accidents</strong></div>
+                                            <div class="cbp-l-caption-title"><i class="fa fa-car"></i> <br /> <strong>{{ trans('home.area4') }}</strong></div>
                                         </div>
                                     </div>
                                 </div>
@@ -158,7 +157,7 @@
                                 <div class="cbp-caption-activeWrap">
                                     <div class="cbp-l-caption-alignLeft">
                                         <div class="cbp-l-caption-body">
-                                            <div class="cbp-l-caption-title"><i class="fa fa-users"></i> <br /> <strong>Family Law</strong></div>
+                                            <div class="cbp-l-caption-title"><i class="fa fa-users"></i> <br /> <strong>{{ trans('home.area5') }}</strong></div>
                                         </div>
                                     </div>
                                 </div>
@@ -174,7 +173,7 @@
                                 <div class="cbp-caption-activeWrap">
                                     <div class="cbp-l-caption-alignLeft">
                                         <div class="cbp-l-caption-body">
-                                            <div class="cbp-l-caption-title"><i class="fa fa-edit"></i> <br /> <strong>Premises Liability</strong></div>
+                                            <div class="cbp-l-caption-title"><i class="fa fa-edit"></i> <br /> <strong>{{ trans('home.area6') }}</strong></div>
                                         </div>
                                     </div>
                                 </div>
@@ -190,7 +189,7 @@
                                 <div class="cbp-caption-activeWrap">
                                     <div class="cbp-l-caption-alignLeft">
                                         <div class="cbp-l-caption-body">
-                                            <div class="cbp-l-caption-title"><i class="fa fa-money"></i> <br /> <strong>Business &amp; Tax</strong></div>
+                                            <div class="cbp-l-caption-title"><i class="fa fa-money"></i> <br /> <strong>{{ trans('home.area7') }}</strong></div>
                                         </div>
                                     </div>
                                 </div>
@@ -206,7 +205,7 @@
                                 <div class="cbp-caption-activeWrap">
                                     <div class="cbp-l-caption-alignLeft">
                                         <div class="cbp-l-caption-body">
-                                            <div class="cbp-l-caption-title"><i class="fa fa-university"></i> <br /> <strong>Other Cases</strong></div>
+                                            <div class="cbp-l-caption-title"><i class="fa fa-university"></i> <br /> <strong>{{ trans('home.area8') }}</strong></div>
                                         </div>
                                     </div>
                                 </div>
@@ -229,8 +228,8 @@
         <div class="feature_sec3">
             <div class="container">
                 <div class="one_third hpeosays" data-anim-type="fadeIn" data-anim-delay="700">
-                    <h2 class="small">Why Clients <strong>Love Us</strong></h2>
-                    <div id="owl-demo3" class="owl-carousel small">    
+                    <h2 class="small">{{ trans('home.client1') }} <strong>{{ trans('home.client2') }}</strong></h2>
+                    <div id="owl-demo3" class="owl-carousel ">    
                         <div>
                             <img src="http://placehold.it/116x126" alt="" />
                             

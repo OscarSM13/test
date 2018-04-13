@@ -12,7 +12,7 @@
             
             	<!-- Logo -->
 				<div class="logo3">
-                    <a href="" id="logo3"></a>
+                    <a href="/" id="logo3"></a>
                 </div>
                 
             </div><!-- end left -->
@@ -33,7 +33,7 @@
                         </a>
 
                 @endforeach
-                <a href="{{route('contact')}}" class="smbut">Free Consultations</a>
+                <a href="{{route('contact')}}" class="smbut">{{ trans('header.consultation') }}</a>
                 
                 
                     
@@ -41,7 +41,7 @@
                 
                 <div class="clearfix"></div>
                 
-                <p>Call Us Confidentially Now: <strong>(888) 123-456-7890</strong></p>
+                <p>{{ trans('header.call') }}<strong>{{ trans('header.numberPhone') }}</strong></p>
                 
 			</div><!-- end right -->
         
@@ -82,15 +82,15 @@
         </li>
         
         <li class="dropdown">
-            <a href="{{ '/area' }}" class="@if(Route::getCurrentRoute()->getName() == 'area') active @endif">Practice Areas</a>
+            <a href="{{ '/area' }}" class="@if(Route::getCurrentRoute()->getName() == 'area') active @endif">{{trans('header.areas')}}</a>
         </li>
         
         <li class="dropdown">
-            <a href="{{ route('about-us') }}" class="@if(Route::getCurrentRoute()->getName() == 'about-us') active @endif">About Us</a>
+            <a href="{{ route('about-us') }}" class="@if(Route::getCurrentRoute()->getName() == 'about-us') active @endif">{{trans('header.about')}}</a>
         </li>
         
         <li class="dropdown">
-            <a href="{{ route('contact') }}" class="@if(Route::getCurrentRoute()->getName() == 'contact') active @endif">Contact</a>
+            <a href="{{ route('contact') }}" class="@if(Route::getCurrentRoute()->getName() == 'contact') active @endif">{{trans('header.contact')}}</a>
         </li>
         
         

@@ -6,24 +6,24 @@
     
         <div class="left">
         
-            <h5>Get Free Consultation</h5>
-            <h6>Available 24/7</h6>
-            <h3>(888) 123-456-7890</h3>
+            <h5>{{ trans('footer.consultation') }}</h5>
+            <h6>{{ trans('footer.avalible') }}</h6>
+            <h3>{{ trans('footer.numberPhone') }}</h3>
             
         </div><!-- end section -->
         
         <div class="center">
         
-            <h5>Message Us Now</h5>
-            <h6>Available 24/7</h6>
-            <h3><a href="mailto:info@website.com">info@website.com</a></h3>
+            <h5>{{ trans('footer.message') }}</h5>
+            <h6>{{trans('footer.avalible') }}</h6>
+            <h3><a href="mailto:info@website.com">{{trans('footer.mail') }}</a></h3>
         
         </div><!-- end section -->
         
         <div class="right">
         
-            <h5>Address Location</h5>
-            <h6>2901 Marmora Road, Glassgow, Seattle, WA 98122-1090 Fax: (888) 123-456-7899 <br /> <a href="{{ route('contact') }}">View Map</a></h6>
+            <h5>{{trans('footer.address1') }}</h5>
+            <h6>{{trans('footer.address2') }}<br/>{{trans('footer.fax') }}<br /> <a href="{{ route('contact') }}">{{trans('footer.map') }}</a></h6>
         
         </div><!-- end section -->
     

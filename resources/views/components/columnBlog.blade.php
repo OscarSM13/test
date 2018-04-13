@@ -2,7 +2,7 @@
 <div class="right_sidebar">
    <div class="sidebar_widget">
       <div class="sidebar_title">
-         <h4>Site <i>Categories</i></h4>
+         <h4><i>{{trans('columnBlog.categories')}}</i></h4>
       </div>
         <ul class="arrows_list1">
         @foreach($category as $categories)
@@ -16,9 +16,9 @@
    <div class="sidebar_widget">
       <div id="tabs">
          <ul class="tabs">
-            <li class="active"><a href="#tab1">Popular</a></li>
-            <li><a href="#tab2">Recent</a></li>
-            <li class="last"><a href="#tab3">Tags</a></li>
+            <li class="active"><a href="#tab1">{{trans('columnBlog.popular')}}</a></li>
+            <li><a href="#tab2">{{trans('columnBlog.recent')}}</a></li>
+            <li class="last"><a href="#tab3">{{trans('columnBlog.tags')}}</a></li>
          </ul>
          <!-- /# end tab links -->
          <div class="tab_container">
@@ -82,7 +82,7 @@
    <div class="clearfix margin_top4"></div>
    <div class="sidebar_widget">
       <div class="sidebar_title">
-         <h4>Site <i>Archives</i></h4>
+         <h4><i>{{trans('columnBlog.archives')}}</i></h4>
       </div>
       <ul class="list2">
           @foreach ($site_archives as $archive)
