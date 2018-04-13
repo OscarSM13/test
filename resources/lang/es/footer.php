@@ -16,9 +16,9 @@ return [
     'consultation' => 'Haz una Consulta Gratis',
     'avalible' => 'Disponible 24/7',
     'numberPhone'=> '(971) 123-456-7890',
-    'message'=> 'Envienos un Mensage Ahora',
+    'message'=> 'Envienos un Mensaje Ahora',
     'mail'=> 'español@website.com',
-    'address1'=> 'Ubicacion',
+    'address1'=> 'Ubicación',
     'address2'=> 'Español 07001',
     'fax'=>'Fax: (971) 123-456-7899',
     'map'=> 'Ver Mapa'

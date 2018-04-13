@@ -226,10 +226,15 @@
     <div class="clearfix"></div>
 
         <div class="feature_sec3">
+
             <div class="container">
+
                 <div class="one_third hpeosays" data-anim-type="fadeIn" data-anim-delay="700">
+
                     <h2 class="small">{{ trans('home.client1') }} <strong>{{ trans('home.client2') }}</strong></h2>
-                    <div id="owl-demo3" class="owl-carousel ">    
+
+                    <div id="owl-demo3" class="owl-carousel">
+
                         <div>
                             <img src="http://placehold.it/116x126" alt="" />
                             

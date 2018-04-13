@@ -21,9 +21,8 @@
 
                 {{ $blogs->links() }}
             </div>
-        </div>
-        
         @include('components.columnBlog')
+        </div>
     </div>
 </div>
 @endsection

@@ -13,7 +13,7 @@ return [
     
     'supportBlack' => 'Telefono General de Consultas: 971-123-4567-8900',
 
-    'contact'=> 'Contacto',
+    'contact'=> '',
     
     'form'=> 'Formulario',
 
@@ -29,7 +29,7 @@ return [
 
     'send' => 'Enviar Mensaje',
 
-    'company' => 'Compañia',
+    'company' => '',
 
     'addressBlack' => 'Localizacion',
 
@@ -49,7 +49,7 @@ return [
 
     'web' => 'www.Español.com',
 
-    'find' => 'Busca en el',
+    'find' => '',
 
     'map' => 'Mapa',
 

@@ -7,8 +7,8 @@
 <div class="page_title2">
 <div class="container">
 	
-    <h1>Single Post</h1>
-    <div class="pagenation">&nbsp;<a href="{{ route('home')}}">Home</a> <i>/</i> <a href="{{ route('blog')}}">Blog</a> <i>/</i> Single Post</div>
+    <h1>{{ trans('singlePost.title')}}</h1>
+    <div class="pagenation">&nbsp;<a href="{{ route('home')}}">Home</a> <i>/</i> <a href="{{ route('blog')}}">Blog</a> <i>/</i> {{ trans('singlePost.title')}}</div>
      
 </div>
 </div><!-- end page title --> 
@@ -41,7 +41,7 @@
 
             
             <div class="sharepost">
-				<h4>Share this Post</h4>
+				<h4>{{ trans('singlePost.share')}}</h4>
 					<ul>
 						<li><a href="#">&nbsp;<i class="fa fa-facebook fa-lg"></i>&nbsp;</a></li>
 						<li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
