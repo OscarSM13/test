@@ -27,11 +27,17 @@
     <script type="text/javascript" src="{{ asset('js/cubeportfolio/jquery.cubeportfolio.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/cubeportfolio/main.js') }}"></script>
 
+    <!-- owl carousel -->
+    <script src="{{ asset('js/carouselowl/owl.carousel.js') }}"></script>
 
     <!-- Accordion-->
     <script type="text/javascript" src="{{ asset('js/accordion/jquery.accordion.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/accordion/jquery.easing.1.3.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/accordion/custom.js') }}"></script>
+
+    <!-- tabs -->
+    <script src="{{ asset('js/tabs/assets/js/responsive-tabs.min.js') }}" type="text/javascript"></script>
+
     <!-- Contact -->
     <script type="text/javascript">
             (function($) {
@@ -57,10 +63,5 @@
             })(jQuery);
         </script>
 
-    <!-- tabs -->
-    <script src="{{ asset('js/tabs/assets/js/responsive-tabs.min.js') }}" type="text/javascript"></script>
-
-    <!-- owl carousel -->
-    <script src="{{ asset('js/carouselowl/owl.carousel.js') }}"></script>
-
+    
    
