@@ -26,9 +26,9 @@
                <ul class="recent_posts_list">
                    @foreach($popular as $populars)
                   <li>
-                     <span><a href="{{ route('blogEntry',$populars->id )}}"><img src="{{ $blog->getMedia()->first()->getUrl('thumb-blog') }}" alt=""/></a></span>
+                     <span><a href="{{ route('blogEntry',$populars->id )}}"><img src="{{ $populars->getMedia()->first()->getUrl('thumb-column-blog') }}" alt=""/></a></span>
                      <a href="{{ route('blogEntry', $populars->id )}}">{{ $populars->title }}</a>
-                     <i>October 13, 2014</i>
+                     <i>{{ $populars->publish_date->format('d/m/Y')}}</i>
                   </li>
                   @endforeach
                </ul>
@@ -38,9 +38,9 @@
                <ul class="recent_posts_list">
                    @foreach($recent as $item)
                     <li>
-                        <span><a href="{{ route('blogEntry', $item->id) }}"><img src="{{ $item->image }}" alt="" height="50" width="50" /></a></span>
+                        <span><a href="{{ route('blogEntry', $item->id) }}"><img src="{{ $populars->getMedia()->first()->getUrl('thumb-column-blog') }}" alt=""/></a></span>
                         <a href="{{ route('blogEntry', $item->id) }}">{{ $item->title }}</a>
-                        <i>October 18, 2014</i>
+                        <i>{{ $item->publish_date->format('d/m/Y')}}</i>
                     </li>
                   @endforeach
                </ul>

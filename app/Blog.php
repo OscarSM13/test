@@ -30,8 +30,8 @@ class Blog extends Model implements HasMedia
     public function registerMediaCollections(Media $media = null) {
         $this
             ->addMediaConversion('thumb-blog')  
-            ->width(368)
-            ->height(232);
+            ->width(1170)
+            ->height(520);
 
         $this
             ->addMediaConversion('thumb-column-blog')

@@ -37,7 +37,7 @@ Route::group([
         $blog
             ->addMediaFromUrl('https://d26a57ydsghvgx.cloudfront.net/content/blog/BlogImage_Chat.jpg')
             ->toMediaCollection();
-
+        dd($blog->getMedia()->first()->getUrl('thumb-blog'));
         dd($blog->getMedia()->first()->getUrl('thumb-column-blog'));
     });
 });

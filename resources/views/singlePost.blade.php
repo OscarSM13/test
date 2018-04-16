@@ -22,7 +22,7 @@
         	
         <div class="blog_post">	
             <div class="blog_postcontent">
-            <div class="image_frame"><img src="{{ $blog->getMedia()->first()->getUrl() }}" alt="" /></div>
+            <div class="image_frame"><img src="{{ $blog->getMedia()->first()->getUrl('thumb-blog') }}" alt="" /></div>
             <h3>{{ $blog->title }}</h3>
                 <ul class="post_meta_links">
 					<li><a href="#" class="date">{{ $blog->publish_date->format('d/m/Y') }}</a></li>
