@@ -2,7 +2,7 @@
 
 <div class="blog_post">
     <div class="blog_postcontent">
-        <div class="image_frame"><a href="{{ route('blogEntry', $blog->id) }}"><img src="{{ $blog->image }}" alt="" /></a></div>
+        <div class="image_frame"><a href="{{ route('blogEntry', $blog->id) }}"><img src="{{ $blog->getMedia()->first()->getUrl('thumb-blog') }}" alt="" /></a></div>
         <h3><a href="{{ route('blogEntry', $blog->id) }}">{{ $blog->title }}</a></h3>
         <ul class="post_meta_links">
             <li><a href="#" class="date">{{ $blog->publish_date->format('d/m/Y') }}</a></li>
@@ -13,7 +13,7 @@
         </ul>
         <div class="clearfix"></div>
         <div class="margin_top1"></div>
-        <p>{{ str_limit($blog->description, 100, '') }} <a href="{{ route('blogEntry', $blog->id) }}">read more...</a></p>
+        <p>{{ str_limit($blog->description, 100, '') }} <a href="{{ route('blogEntry', $blog->id) }}">{{ trans('singlePost.read')}}</a></p>
     </div>
 </div>
 

@@ -4,9 +4,14 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use Spatie\Translatable\HasTranslations;
-class Blog extends Model
+use Spatie\MediaLibrary\HasMedia\HasMediaTrait;
+use Spatie\MediaLibrary\HasMedia\HasMedia;
+use Spatie\MediaLibrary\Models\Media;
+
+class Blog extends Model implements HasMedia
 {
     use HasTranslations;
+    use HasMediaTrait;
     
     public $translatable = ['title', 'description'];
 
@@ -21,6 +26,18 @@ class Blog extends Model
     protected $dates = [
         'publish_date'
     ];
+
+    public function registerMediaCollections(Media $media = null) {
+        $this
+            ->addMediaConversion('thumb-blog')  
+            ->width(368)
+            ->height(232);
+
+        $this
+            ->addMediaConversion('thumb-column-blog')
+            ->width(100)
+            ->height(50);
+    }
 
     public function category() {
         return $this->belongsTo(BlogCategory::class);

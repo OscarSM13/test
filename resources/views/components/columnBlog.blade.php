@@ -26,7 +26,7 @@
                <ul class="recent_posts_list">
                    @foreach($popular as $populars)
                   <li>
-                     <span><a href="{{ route('blogEntry',$populars->id )}}"><img src="{{$populars->image}}" alt="" with="50px" height="50px" /></a></span>
+                     <span><a href="{{ route('blogEntry',$populars->id )}}"><img src="{{ $blog->getMedia()->first()->getUrl('thumb-blog') }}" alt=""/></a></span>
                      <a href="{{ route('blogEntry', $populars->id )}}">{{ $populars->title }}</a>
                      <i>October 13, 2014</i>
                   </li>

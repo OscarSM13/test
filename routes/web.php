@@ -33,11 +33,11 @@ Route::group([
     });
 
     Route::get('test', function() {
-        $blog = Blog::create([
-            'image' => 'http://via.placeholder.com/800x600',
-            'title' => 'Test',
-            'description' => 'Test',
-            'publish_date' => Carbon::now()
-        ]);
+        $blog = Blog::find(16);
+        $blog
+            ->addMediaFromUrl('https://d26a57ydsghvgx.cloudfront.net/content/blog/BlogImage_Chat.jpg')
+            ->toMediaCollection();
+
+        dd($blog->getMedia()->first()->getUrl('thumb-column-blog'));
     });
 });
