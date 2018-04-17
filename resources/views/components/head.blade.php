@@ -32,7 +32,11 @@
     <link href="{{ asset('js/animations/css/animations.min.css') }}" rel="stylesheet" type="text/css" media="all" />
     
     <!-- responsive devices styles -->
-	<link rel="stylesheet" media="screen" href="{{ asset('css/responsive-leyouts.css') }}" type="text/css" />
+    <link rel="stylesheet" media="screen" href="{{ asset('css/responsive-leyouts.css') }}" type="text/css" />
+    
+    <!-- owl carousel -->
+    <link href="{{ asset('js/carouselowl/owl.transitions.css') }}" rel="stylesheet">
+    <link href="{{ asset('js/carouselowl/owl.carousel.css') }}" rel="stylesheet">
     
     <!-- shortcodes -->
     <link rel="stylesheet" media="screen" href="{{ asset('css/shortcodes.css') }}" type="text/css" /> 
@@ -45,9 +49,7 @@
     
     @stack('styles')
 	
-    <!-- owl carousel -->
-    <link href="{{ asset('js/carouselowl/owl.transitions.css') }}" rel="stylesheet">
-    <link href="{{ asset('js/carouselowl/owl.carousel.css') }}" rel="stylesheet">
+  
     
     <!-- cubeportfolio -->
     <link rel="stylesheet" type="text/css" href="{{ asset('js/cubeportfolio/cubeportfolio.min.css') }}">
