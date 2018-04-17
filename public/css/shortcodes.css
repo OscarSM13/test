@@ -330,7 +330,7 @@
 }
 
 .title9 .line {
-    background: url(../images/h-line2.png) no-repeat center top;
+    background: url(../storage/images/h-line2.png) no-repeat center top;
     height: 3px;
     display: block;
     bottom: 0px;
@@ -350,7 +350,7 @@
 }
 
 .title10 .line {
-    background: url(../images/h-line3.png) no-repeat center 13px;
+    background: url(../storage/images/h-line3.png) no-repeat center 13px;
     height: 39px;
     display: block;
     bottom: 0px;
@@ -385,7 +385,7 @@
 }
 
 .title11 .line2 {
-    background: url(../images/h-line9.png) no-repeat center top;
+    background: url(../storage/images/h-line9.png) no-repeat center top;
     height: 7px;
     display: block;
     bottom: 0px;
