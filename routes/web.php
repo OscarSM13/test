@@ -28,9 +28,7 @@ Route::group([
 
     Route::name('contact')->get('/contact', 'ContactController@index');
 
-    Route::get('/area', function () {
-        return view('area');
-    });
+    Route::name('areas')->get('/areas', 'PracticeAreasController@index');
 
     Route::get('test', function() {
         $blog = Blog::find(16);

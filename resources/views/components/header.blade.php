@@ -87,7 +87,7 @@
         </li>
         
         <li class="dropdown">
-            <a href="{{ '/area' }}" class="@if(Route::getCurrentRoute()->getName() == 'area') active @endif">{{trans('header.areas')}}</a>
+            <a href="{{ '/areas' }}" class="@if(Route::getCurrentRoute()->getName() == 'areas') active @endif">{{trans('header.areas')}}</a>
         </li>
         
         <li class="dropdown">
