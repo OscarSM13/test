@@ -21,6 +21,14 @@ $factory->define(App\User::class, function (Faker $faker) {
         'remember_token' => str_random(10),
     ];
 });
+$factory->define(App\PracticeArea::class, function (Faker $faker) {
+    return [
+        'title' => $faker->word(random_int(8,15)),
+        'description' => $faker->paragraph,
+        'image' => $faker->imageUrl(280, 210)
+    ];
+});
+
 
 $factory->define(App\Blog::class, function (Faker $faker) {
     return [
