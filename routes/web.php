@@ -30,6 +30,9 @@ Route::group([
 
     Route::name('areas')->get('/areas', 'PracticeAreasController@index');
 
+    Route::get('singleArea',function(){
+        return view('singleArea');
+    });
     Route::get('test', function() {
         $blog = Blog::find(16);
         $blog
