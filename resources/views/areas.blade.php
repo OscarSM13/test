@@ -6,7 +6,7 @@
     <div class="container">
         
         <h1>Practice Areas</h1>
-        <div class="pagenation">&nbsp;<a href="index.html">Home</a> <i>/</i> <a href="#">Practice Areas</a> <i>/</i> Practice Areas Style 4</div>
+        <div class="pagenation">&nbsp;<a href="/">Home</a> <i>/</i> Practice Areas</div>
             
     </div>
     </div><!-- end page title --> 
