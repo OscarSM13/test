@@ -6,6 +6,7 @@
 <!-- MasterSlider -->
 <link rel="stylesheet" href="{{ asset('js/masterslider/style/masterslider.css') }}" />
 <link rel="stylesheet" href="{{ asset('js/masterslider/skins/default/style.css') }}" />
+
 @endpush
 
 @section('content')
@@ -102,11 +103,24 @@
 
             <div class="container">
 
-                <div class="one_third hpeosays" data-anim-type="fadeIn" data-anim-delay="700">
-
+                <div class="one">
                     <h2 class="small">{{ trans('home.client1') }} <strong>{{ trans('home.client2') }}</strong></h2>
+                </div>
 
-                    <div id="owl-demo3" class="owl-carousel">
+                <div class="one_third hpeosays">
+                    <div>
+                        <img src="http://placehold.it/116x126" alt="" />
+                        
+                        <p><strong>Lorem that more</strong> less normal distribution of letters as opposed to using content here content making it look like readable english many web page editors now used model structure looks Ipsum always and a of model sentence structures to generate which looks.</p>
+                        
+                        <b>- Ricky Holness, <em>additional info</em></b>
+                        
+                        <div class="divider_line21 last"></div>
+                        
+                    </div><!-- end section -->
+                </div>
+                
+                <div class="one_third hpeosays">
 
                         <div>
                             <img src="http://placehold.it/116x126" alt="" />
@@ -118,8 +132,22 @@
                             <div class="divider_line21 last"></div>
                             
                         </div><!-- end section -->
-                    </div>
-              
+
+                </div>
+
+                <div class="one_third hpeosays last" >
+
+                        <div>
+                            <img src="http://placehold.it/116x126" alt="" />
+                            
+                            <p><strong>Lorem that more</strong> less normal distribution of letters as opposed to using content here content making it look like readable english many web page editors now used model structure looks Ipsum always and a of model sentence structures to generate which looks.</p>
+                            
+                            <b>- Ricky Holness, <em>additional info</em></b>
+                            
+                            <div class="divider_line21 last"></div>
+                            
+                        </div><!-- end section -->
+
                 </div>
             </div><!-- end all section -->
         </div>
@@ -129,6 +157,9 @@
 @push('scripts')
 
 
+    <!-- MasterSlider -->
+    <script src="{{asset('js/masterslider/jquery.easing.min.js')}}"></script>
+    <script src="{{ asset('js/masterslider/masterslider.min.js') }}"></script>
     <script type="text/javascript">
         (function($) {
             "use strict";
