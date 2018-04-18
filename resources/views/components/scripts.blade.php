@@ -37,7 +37,8 @@
 
     <!-- tabs -->
     <script src="{{ asset('js/tabs/assets/js/responsive-tabs.min.js') }}" type="text/javascript"></script>
-
+    <script type="text/javascript" src="{{ asset('js/universal/custom.js') }}" ></script>
+    
     <!-- Contact -->
     <script type="text/javascript">
             (function($) {
