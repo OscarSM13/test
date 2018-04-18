@@ -5,9 +5,9 @@
 
 <div class="clearfix"></div>
 
-@if(!$area->getMedia()->isEmpty())
-<div class="full_biohead" style="background:url('{{ $area->getMedia()->getUrl('thumb-single-practice-area') }}') no-repeat center top">
-@endif
+<!--@if(!$area->getMedia()->isEmpty())-->
+<div class="full_biohead" style="background:{{ $area->image }} no-repeat center top">
+<!--@endif-->
 <div class="container">
 
 </div>
