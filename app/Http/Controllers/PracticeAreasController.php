@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\PracticeArea;
-use Carbon\Carbon;
 
 class PracticeAreasController extends Controller
 {
@@ -13,4 +12,13 @@ class PracticeAreasController extends Controller
 
         return view('areas')->with('areas', $areas);
     }
+
+    public function single($id) {
+        $singleArea = PracticeArea::find($id);
+
+        $singleArea->save();
+        return view('singleArea')
+            ->with('area', $singleArea);
+    }
+    
 }
