@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-@include('components.head')
-<body>
-    @include('components.header')
+    @include('components.head')
+    <body>
+        @include('components.header')
 
-    @yield('content')
+        @yield('content')
 
-    @include('components.footer')
+        @include('components.footer')
 
-    <a href="#" class="scrollup">Scroll</a><!-- end scroll to top of the page-->
+        <a href="#" class="scrollup">Scroll</a><!-- end scroll to top of the page-->
 
-    @include('components.scripts')
-</body>
+        @include('components.scripts')
+    </body>
 </html>
