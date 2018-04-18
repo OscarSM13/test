@@ -21,7 +21,7 @@ return [
 
     'name'=> 'Name',
 
-    'mail' => 'E-mail',
+    'mailForm' => 'E-mail',
 
     'subject' => 'Subject',
 
