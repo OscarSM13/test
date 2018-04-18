@@ -1,7 +1,11 @@
 <li class="cbp-item">
-    <a href="/areas" class="cbp-caption">
+    <a href="{{ route('area', $area->id) }}" class="cbp-caption">
         <div class="cbp-caption-defaultWrap">
-            <img src="{{ $area->image}}" alt="">
+            @if(!$area->getMedia()->isEmpty())
+                <img src="{{ $area->getMedia()->first()->getUrl('thumb-practice-areas') }}" alt="">
+            @else
+                <img src="http://via.placeholder.com/279x200" alt="titulo">
+            @endif
         </div>
         <div class="cbp-caption-activeWrap">
             <div class="cbp-l-caption-alignLeft">

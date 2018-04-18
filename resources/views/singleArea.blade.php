@@ -5,8 +5,9 @@
 
 <div class="clearfix"></div>
 
-
-<div class="full_biohead">
+@if(!$area->getMedia()->isEmpty())
+<div class="full_biohead" style="background:url('{{ $area->getMedia()->getUrl('thumb-single-practice-area') }}') no-repeat center top">
+@endif
 <div class="container">
 
 </div>
@@ -19,59 +20,51 @@
         <div class="col-sm-8">
             <div class="clearfix"></div>
             
-                <h3>Professional Experience</h3>
+                <h3>{{ $area->title }}</h3>
             
-                <p class="big_text3">Established fact that a reader will be distracted by the readable content of a page when looking at its layout. <strong class="color2 sb">The point of using Lorem Ipsum</strong> is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose.</p>
-                <br />
-                <p class="big_text3">There are many variations of passages of Lorem Ipsum available, but the <strong class="color2 sb">alteration have suere</strong> majority in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                <p class="big_text3">{{ $area->description }}</p>
             </div>
         <div class="col-sm-4">
-            <h3>Pide presupuesto para "sobre esta area"</h3>
-            <form action="demo-contacts.php" method="post" id="sky-form" class="sky-form">
+            <h3>Pide presupuesto para {{ $area->title }}</h3>
+            <div class="cforms">
+        
+                <form action="demo-contacts.php" method="post" id="sky-form" class="sky-form">
+                    <br/>
                 <fieldset>
                     <div class="row">
-                    
-                    <div class="col col-4">
-                        <label class="label"><strong>Your Name*</strong></label>
+                    <section class="col col-6">
+                        <label class="label">{{ trans('contact.name') }}</label>
                         <label class="input"> <i class="icon-append icon-user"></i>
                         <input type="text" name="name" id="name">
                         </label>
-                    </div>
-                    
-                    <div class="col col-4">
-                        <label class="label"><strong>Your E-mail*</strong></label>
+                    </section>
+                    <section class="col col-6">
+                        <label class="label">{{ trans('contact.mailForm') }}</label>
                         <label class="input"> <i class="icon-append icon-envelope-alt"></i>
                         <input type="email" name="email" id="email">
                         </label>
+                    </section>
                     </div>
-                    
-                                
-                    <div class="col col-4">
-                    <label class="label"><strong>Phone Number</strong></label>
-                    <label class="input"> <i class="icon-append icon-tag"></i>
-                        <input type="text" name="subject" id="subject">
-                    </label>
-                    </div>
-                    
-                    </div>
-                    
-                    <br />
-                    
-                    <div>
-                    <label class="label"><strong>Message*</strong></label>
+                    <section>
+                    <label class="label">{{ trans('contact.message') }}</label>
                     <label class="textarea"> <i class="icon-append icon-comment"></i>
-                        <textarea rows="5" name="message" id="message"></textarea>
+                        <textarea rows="4" name="message" id="message"></textarea>
                     </label>
-                    </div>
-                    
+                    </section>
+                    <section>
+                    <label class="checkbox">
+                        <input type="checkbox" name="copy" id="copy">
+                        <i></i>{{ trans('contact.copy') }}</label>
+                    </section>
                 </fieldset>
                 <footer>
-                    <button type="submit" class="subbutton">Submit Your Message</button>
+                    <button type="submit" class="button">{{ trans('contact.send') }}</button>
                 </footer>
                 <div class="message"> <i class="icon-ok"></i>
-                    <p>Your message was successfully sent!</p>
+                    <p>{{ trans('contact.send') }}</p>
                 </div>
-            </form>
+                </form>
+            </div>
         </div>
     </div>
 </div><!-- end content area -->
