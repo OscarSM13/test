@@ -8,7 +8,7 @@
 <div class="container">
 	
     <h1>{{ trans('singlePost.title')}}</h1>
-    <div class="pagenation">&nbsp;<a href="{{ route('home')}}">Home</a> <i>/</i> <a href="{{ route('blog')}}">Blog</a> <i>/</i> {{ trans('singlePost.title')}}</div>
+    <div class="pagenation">&nbsp;<a href="{{ route('home')}}">Home</a> <i>/</i> <a href="{{ route('blog')}}">Blog</a> <i>/</i> {{ $blog->title }}</div>
      
 </div>
 </div><!-- end page title --> 
