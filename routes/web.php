@@ -43,9 +43,9 @@ Route::group([
     });
 
     Route::get('test2', function() {
-        $area = PracticeArea::find(44);
+        $area = PracticeArea::find(45);
         $area
-            ->addMediaFromUrl('https://d26a57ydsghvgx.cloudfront.net/content/blog/BlogImage_Chat.jpg')
+            ->addMediaFromUrl('http://orig10.deviantart.net/7206/f/2009/008/e/2/a_little_view_of_jakarta_by_bangpikiii.jpg')
             ->toMediaCollection();
             dd($area->getMedia()->first()->getUrl('thumb-single-practice-area'));
         dd($area->getMedia()->first()->getUrl('thumb-practice-areas'));
