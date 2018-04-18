@@ -24,6 +24,7 @@
                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                     <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                     <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
                 </ul>
                 
                 <div class="dropdown" style="display:inline-block; z-index:10000";>
@@ -69,8 +70,8 @@
     
     <div class="container">
       <div class="navbar-header">
-        <div class="navbar-toggle .navbar-collapse .pull-right " data-toggle="collapse" data-target="#navbar-collapse-1"  > <span></span>
-          <button type="button" > <i class="fa fa-bars"></i></button>
+        <div class="navbar-toggle .navbar-collapse .pull-right " data-toggle="collapse" data-target="#navbar-collapse-1"> <span></span>
+          <button type="button" > <i class="fa fa-bars"></i></button></i></button>
         </div>
       </div>
       
