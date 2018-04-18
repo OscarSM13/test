@@ -12,6 +12,7 @@
 */
 
 use App\Blog;
+use App\PracticeArea;
 use Carbon\Carbon;
 
 Route::group([
@@ -30,9 +31,8 @@ Route::group([
 
     Route::name('areas')->get('/areas', 'PracticeAreasController@index');
 
-    Route::get('singleArea',function(){
-        return view('singleArea');
-    });
+    Route::name('area')->get('/area/{id}', 'PracticeAreasController@single');
+    
     Route::get('test', function() {
         $blog = Blog::find(16);
         $blog
@@ -40,5 +40,14 @@ Route::group([
             ->toMediaCollection();
         dd($blog->getMedia()->first()->getUrl('thumb-blog'));
         dd($blog->getMedia()->first()->getUrl('thumb-column-blog'));
+    });
+
+    Route::get('test2', function() {
+        $area = PracticeArea::find(44);
+        $area
+            ->addMediaFromUrl('https://d26a57ydsghvgx.cloudfront.net/content/blog/BlogImage_Chat.jpg')
+            ->toMediaCollection();
+            dd($area->getMedia()->first()->getUrl('thumb-single-practice-area'));
+        dd($area->getMedia()->first()->getUrl('thumb-practice-areas'));
     });
 });
