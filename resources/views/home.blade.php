@@ -153,34 +153,3 @@
         </div>
 
 @endsection
-
-@push('scripts')
-
-
-    <!-- MasterSlider -->
-    <script src="{{asset('js/masterslider/jquery.easing.min.js')}}"></script>
-    <script src="{{ asset('js/masterslider/masterslider.min.js') }}"></script>
-    <script type="text/javascript">
-        (function($) {
-            "use strict";
-
-            var slider = new MasterSlider();
-            // adds Arrows navigation control to the slider.
-            slider.control('arrows');
-            slider.control('bullets');
-
-            slider.setup('masterslider', {
-                width: 1400, // slider standard width
-                height: 580, // slider standard height
-                space: 0,
-                speed: 45,
-                layout: 'fullwidth',
-                loop: true,
-                preload: 0,
-                autoplay: true,
-                view: "mask"
-            });
-
-        })(jQuery);
-    </script>
-@endpush
